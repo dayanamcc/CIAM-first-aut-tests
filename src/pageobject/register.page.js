@@ -33,7 +33,6 @@ class RegistrationPersonalInformations {
    *  @ returns { Promise }
    */
   fillInPersonalInformations(data) {
-    console.log('fill',data, browser);
     browser.click(this.pageElements.linkRegister)
     .pause(5000);
     browser.setValue(this.pageElements.emailAddress, data.emailAddress)
@@ -45,7 +44,6 @@ class RegistrationPersonalInformations {
     browser.setValue(this.pageElements.zipCode,data.zipCode);
     browser.click(this.pageElements.radioButtomCat);
     //browser.click('//div[@id="register-site-login"]//input[@type="submit"]', 'true');
-    console.log('finished');
   }
 
 }

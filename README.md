@@ -25,7 +25,8 @@ npm test
 #Run Selenium manually   
 open wdio.conf.js and edit:   
 services: ['phantomjs']   
-run: .\node_modules\.bin\selenium-standalone
+run: .\node_modules\.bin\selenium-standalone install (if not already installed)
+run: .\node_modules\.bin\selenium-standalone run
 
 #Run test manually
 ```shell

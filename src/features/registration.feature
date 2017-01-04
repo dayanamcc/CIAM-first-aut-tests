@@ -8,4 +8,3 @@ Feature: Register new user
       Given I go to "https://www.purinadentalife.com/"
       When I start the registration process form the login page
       Then I should see logout link
-      
