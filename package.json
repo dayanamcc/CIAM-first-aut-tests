@@ -16,6 +16,9 @@
     "wdio-junit-reporter": "^0.2.0",
     "wdio-phantomjs-service": "^0.2.2",
     "wdio-selenium-standalone-service": "0.0.7",
-    "webdriverio": "^4.5.2"
+    "webdriverio": "^4.5.2",
+    "chai": "3.5.0",
+    "chai-as-promised": "6.0.0"
+
   }
 }

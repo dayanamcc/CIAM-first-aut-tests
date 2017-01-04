@@ -1,0 +1,12 @@
+[0103/221339:ERROR:process_info.cc(330)] VirtualQueryEx: Acceso denegado. (0x5)
+[0103/221339:ERROR:process_info.cc(547)] ReadMemoryInfo failed
+[0103/221339:ERROR:process_reader_win.cc(142)] SuspendThread: Acceso denegado. (0x5)
+[0103/221339:ERROR:exception_snapshot_win.cc(87)] thread ID 9656 not found in process
+[0103/221339:WARNING:crash_report_exception_handler.cc(61)] ProcessSnapshotWin::Initialize failed
+[0103/221339:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)
+[0103/225307:ERROR:process_info.cc(330)] VirtualQueryEx: Acceso denegado. (0x5)
+[0103/225307:ERROR:process_info.cc(547)] ReadMemoryInfo failed
+[0103/225307:ERROR:process_reader_win.cc(142)] SuspendThread: Acceso denegado. (0x5)
+[0103/225307:ERROR:exception_snapshot_win.cc(87)] thread ID 5704 not found in process
+[0103/225307:WARNING:crash_report_exception_handler.cc(61)] ProcessSnapshotWin::Initialize failed
+[0103/225307:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Se intentó obtener acceso a un proceso que está cerrándose.  (0xc000010a)

@@ -1,30 +1,24 @@
-var assert = require('assert'),
-    tmpResult;
+var assert = require('assert')
+var chai = require('chai')
+
+var po = require('../pageobject/register.page');
 
 module.exports = function () {
 
-  this.Given(/^I go to \"([^\"]*)\"$/, function (httpsstagepurinadentalifecom) {
-    browser.url(httpsstagepurinadentalifecom);
+  this.Given(/^I go to \"([^\"]*)\"$/, function (url) {
+      browser.url(url);
   });
 
   this.When(/^I start the registration process form the login page$/, function () {
-      // click on registration, fill the form and register.
-      //gigya-loginID-7044876377523942
-
-      browser.click('a.gigya-register')
-      .pause(5000);
-      browser.setValue('#gigya-loginID-7044876377523942', 'nestlepurinadentalife+40@gmail.com')
-      .pause(2000);
-      //browser.setValue('input[name=password]', 'Admin1234')
-      browser.addValue('input[name=password]', 'Admin1234')
-      .pause(3000);
-      browser.addValue('input[name=profile.firstName]', 'Dansjjek');
-
-
+    var dataObject = require('../data/newUser');
+    po.fillInPersonalInformations(dataObject);
   });
 
   this.Then(/^I should see logout link$/, function () {
-    assert(true);
+     assert(false, 'this test will fail on purpose');
+    // var cups = '2 cups please';
+    // chai.isNotNumber(cups, 'how many cups');
+
   });
 
 };
