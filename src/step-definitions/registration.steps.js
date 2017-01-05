@@ -1,7 +1,8 @@
 var assert = require('assert')
 var chai = require('chai')
 
-var po = require('../pageobject/register.page');
+var register = require('../pageobject/register.page');
+var home = require('../pageobject/home.page');
 
 module.exports = function () {
 
@@ -11,14 +12,11 @@ module.exports = function () {
 
   this.When(/^I start the registration process form the login page$/, function () {
     var dataObject = require('../data/newUser');
-    po.fillInPersonalInformations(dataObject);
+    register.fillInPersonalInformations(dataObject);
   });
 
   this.Then(/^I should see logout link$/, function () {
-     assert(false, 'this test will fail on purpose');
-    // var cups = '2 cups please';
-    // chai.isNotNumber(cups, 'how many cups');
-
+    //assert.equal(true,browser.isExisting(''+home.pageElements.buttomLogout));
   });
 
 };

@@ -22,7 +22,7 @@ class RegistrationPersonalInformations {
 
       form: 'form#gigya-register-form',
       linkRegister: 'a.gigya-register',
-      buttomRegister: '//div[@id="register-site-login"]//input[@type="submit"]',
+      buttomRegister: '//div[@id="register-site-login"]//input[@type="submit"]'
 
     };
   }
@@ -34,7 +34,7 @@ class RegistrationPersonalInformations {
    */
   fillInPersonalInformations(data) {
     browser.click(this.pageElements.linkRegister)
-    .pause(5000);
+    .pause(4000);
     browser.setValue(this.pageElements.emailAddress, data.emailAddress)
     .pause(2000);
     browser.setValue(this.pageElements.password, data.password);
@@ -43,7 +43,7 @@ class RegistrationPersonalInformations {
     browser.setValue(this.pageElements.lastName,data.lastName);
     browser.setValue(this.pageElements.zipCode,data.zipCode);
     browser.click(this.pageElements.radioButtomCat);
-    //browser.click('//div[@id="register-site-login"]//input[@type="submit"]', 'true');
+    //browser.click(this.pageElements.buttomRegister).  // click on register buttom
   }
 
 }
