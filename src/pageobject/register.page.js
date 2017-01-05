@@ -44,6 +44,7 @@ class RegistrationPersonalInformations {
     browser.setValue(this.pageElements.zipCode,data.zipCode);
     browser.click(this.pageElements.radioButtomCat);
     //browser.click(this.pageElements.buttomRegister).  // click on register buttom
+    //pause(3000);
   }
 
 }
