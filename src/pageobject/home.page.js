@@ -15,5 +15,6 @@ class HomePage {
       buttomLogout: '//BUTTON[@type="button"][text()="Logout"]'
     };
   }
+
 }
 module.exports = new HomePage();
