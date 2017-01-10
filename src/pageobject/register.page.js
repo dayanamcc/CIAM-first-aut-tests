@@ -43,12 +43,9 @@ class RegistrationPersonalInformations {
     browser.setValue(this.pageElements.lastName,data.lastName);
     browser.setValue(this.pageElements.zipCode,data.zipCode);
     browser.click(this.pageElements.radioButtomCat);
-    //browser.click(this.pageElements.buttomRegister).  // click on register buttom, Now commented to avoid Registers
+    //browser.click(this.pageElements.buttomRegister).  // click on register buttom, Now commented to avoid new Registers
     //pause(3000);
   }
 
 }
 module.exports = new RegistrationPersonalInformations();
-
-
-// module.exports = {};

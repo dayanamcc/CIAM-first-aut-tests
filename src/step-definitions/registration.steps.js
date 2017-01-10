@@ -5,7 +5,7 @@ var register = require('../pageobject/register.page');
 var home = require('../pageobject/home.page');
 
 module.exports = function () {
-
+  
   this.Given(/^I go to \"([^\"]*)\"$/, function (url) {
       browser.url(url);
   });
@@ -16,7 +16,6 @@ module.exports = function () {
   });
 
   this.Then(/^I should see logout link$/, function () {
-    //assert.equal(true,browser.isExisting(''+home.pageElements.buttomLogout));
     chai.assert(true == browser.isExisting(''+home.pageElements.buttomLogout), 'fails on register, link for Logout dont exist' );
   });
 
