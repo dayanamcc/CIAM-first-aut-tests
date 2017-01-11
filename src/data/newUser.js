@@ -6,9 +6,9 @@ const dataObject = {
   // City and ZipCode have to match for Vertex (Tax calculation based on address)
   firstName: 'firstName1',
   lastName: 'lastName1',
-  emailAddress: 'email',
+  emailAddress: 'EMAIL',
   zipCode: '0101010101',
-  password:'Admin123123' ,
+  password:'Admin123' ,
 
 };
 

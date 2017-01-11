@@ -5,7 +5,7 @@ var register = require('../pageobject/register.page');
 var home = require('../pageobject/home.page');
 
 module.exports = function () {
-  
+
   this.Given(/^I go to \"([^\"]*)\"$/, function (url) {
       browser.url(url);
   });

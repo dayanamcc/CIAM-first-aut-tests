@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * @classdesc Personal informations page.
+ * @classdesc my-account page. Represents the personal information of an user.
  */
 class RegistrationPersonalInformations {
 
@@ -33,10 +33,25 @@ class RegistrationPersonalInformations {
    *  @ returns { Promise }
    */
   updatePersonalFirstnameLastname(data){
-    browser.pause(3000);
-    browser.setValue(this.pageElements.inputFirstName, data.firstName+'1234');
-    browser.setValue(this.pageElements.inputLastName, data.lastName+'1234')
+    browser.pause(4000);
+    browser.setValue(this.pageElements.inputFirstName, data.firstName);
+    browser.setValue(this.pageElements.inputLastName, data.lastName)
     .pause(9000);
+  }
+
+  /**
+   *  @desc updatePersonalInformation firstName and lastName
+   *  @param {Object} data
+   *  @ returns { Promise }
+   */
+   seeCustomerWithName(data){
+    var firstName = browser.getValue(this.pageElements.inputFirstName);
+    var lastName = browser.getValue(this.pageElements.inputLastName);
+
+    return Promise.all([
+      data.firstName.should.equal(firstName),
+      data.lastName.should.equal(lastName),
+    ]);
   }
 
 }

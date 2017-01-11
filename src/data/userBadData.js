@@ -1,8 +1,8 @@
 'use strict';
 
 const dataObject = {
-  emailAddress: 'email',
-  password:'Admin1234444' ,
+  emailAddress: 'EMAIL',
+  password:'Admin1235555' ,
   firstName: 'firstName1',
   lastName: 'lastName1',
   zipCode: '0101010101',
